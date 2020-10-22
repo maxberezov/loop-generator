@@ -305,14 +305,3 @@ def generate_source_code_and_header(kernel_name, folder_name, arrays, writing_pa
         for item in header_code:
             f.write("%s\n" % item)
 
-
-x = generate_source_code('kern_1596447125442135', [("A", {"xA": 64, "yA": 16, "zA": 16}), ("B", {"xB": 4})])
-z = generate_header('kern_1596447125442135')
-
-with open('/home/maksim/Downloads/kern_1596447125442135.c', 'w') as f:
-    for item in x:
-        f.write("%s\n" % item)
-
-with open('/home/maksim/Downloads/kern_1596447125442135.h', 'w') as f:
-    for item in z:
-        f.write("%s\n" % item)
