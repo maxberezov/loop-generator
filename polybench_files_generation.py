@@ -305,3 +305,4 @@ def generate_source_code_and_header(kernel_name, folder_name, arrays, writing_pa
         for item in header_code:
             f.write("%s\n" % item)
 
+
